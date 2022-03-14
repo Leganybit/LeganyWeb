@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}Inicio{% endblock %}
+{% block head %}
+    {{ super() }}
+
+      <link rel="stylesheet" type="text/css" href="../static/btc.css"/>
+
+{% endblock %}
+{% block content %}
+<!---->
+
+<div class="container">
+  <h2>Economía:</h2>
+  <p>
+    Me apetece hablar de:
+  </p>
+  Dinero:
+  <ul>
+   
+    <h3>Definiciones:</h3>
+    <li><a href="/economia/dinero">Dinero ¿Qué es?</a></li>
+
+    <h3>Desajustes económicos:</h3>
+    <li><a href="/economia/fiat_crisis">Manipulación en la cantidad del dinero e ineficiencias económicas</a></li>
+    <li><a href="/economia/crisis_y_reserva_fraccionaria">Reserva fraccinaria y crisis económica</a></li>
+
+    <h3>Intervenciones económicas:</h3>
+    <li><a href="/economia/formas_emision">Formas de emisión monetaria</a></li>
+    <li><a href="/economia/reserva_fraccionaria">Reserva fraccionaria</a></li>
+  </ul>
+
+
+</div>
+
+
+{% endblock %}

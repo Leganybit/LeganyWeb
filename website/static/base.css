@@ -1,0 +1,72 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   background-color: gainsboro;
+   overflow: scroll-hidden;
+   width: 90%;
+   max-width: 1000px;
+   margin: 3em auto;
+   font: 1em/1.2 Arial, Helvetica, sans-serif;
+}
+
+/* editamos la caja izquierda donde va el menú */
+.box {
+   background-color: none;
+   float:  left;
+   width: 20%; /*20% de 1200 es 240 px mide la barra izquierda*/
+   height: auto;
+   margin-right: 30px;
+   text-align: center;
+   padding: 5px;
+   border: 2px solid black;
+   display: flex;
+   justify-content: flex-start;
+   flex-direction: column;
+}
+.container {
+   border-radius: 2px;
+   padding: 5px;
+   overflow: hidden;
+}
+h1 { /*Centro el título principal de la web en inicio (Legany web)*/
+   text-align: center;
+   margin: 5px;
+}
+h2 {
+   margin: 5px;
+}
+h3 {
+   margin: 5px;
+}
+h4 {
+   margin: 5px;
+}
+li {
+   padding: 5px;
+}
+
+.button:link,
+.button:visited {
+   display: block;
+   text-decoration: none;
+
+   color: #FFF;
+   background-color: gray;
+   font-weight: bold;
+   padding: 5px;
+   text-align: center;
+   border: 2px solid #5D6063;
+   border-radius: 5px;
+
+   widt: 20px;
+   margin: 20px auto;
+}
+.button:hover { /*Cuando pasas el raton sobre el boton y cambia es el hover*/
+   background-color: black;
+}
+
+

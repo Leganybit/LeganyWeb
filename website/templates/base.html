@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {% block head %}
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="../static/base.css"/>
+    {% endblock %}
+</head>
+<!---->
+
+<body><!--Aquí va el menú que se repite en cada página-->
+
+
+
+<div>
+    <header><!--Iniciamos el menú-->
+      <div class="box"><!--Abrimos caja izquierda donde ira el menú-->
+        <h2 align="center" style="color: black;">Menú web</h2>
+        <hr>
+            <ul><a class="button" href="/btc">Bitcoin</a></ul>
+            <!--<ul><a href="/xmr"> Monero</a></ul>
+            <ul><a href="/shitcoins">Shitcoins</a></ul>
+            <ul><a href="/historia">Historia</a></ul>-->
+            <ul><a class="button" href="/economia">Economía</a></ul>
+      </div><!--cerramos caja izquierda-->
+    </header>
+
+    <h1><a href="/">Legany web</a></h1>
+    <br /><!--Espacio en blanco-->
+    <hr /><!--Linea continua de separación-->
+
+    {% block content %}
+    {% endblock %}
+</div>
+</body>
+
+
+</html>
