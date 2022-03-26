@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}Inicio{% endblock %}
+{% block head %}
+    {{ super() }}
+
+      <link rel="stylesheet" type="text/css" href="../static/btc.css"/>
+
+{% endblock %}
+{% block content %}
+<!---->
+
+<div class="container">
+  <h2>¿Puede Bitcoin convertirse en moneda de uso general?:</h2>
+  <p>En torno a si btc puede decantarse en el futuro cómo moneda de curso generalmente aceptada, han surgido una serie de debates y pensamientos a favor y en contra. Vamos a hacer un repaso:</p>
+
+  <h3>A favor:</h3>
+  <h4>Su escalabilidad es aumentada en nuevas capas</h4>
+  <p>Con la llegada de lightning network y demás capas que funcionan sobre la red de btc, se vuelve posible un uso masivo y general por parte de la economía.</p> 
+  <h4>Seguridad y valor</h4>
+  <p>Es actualmente la única red descentralizada y segura que existe, permitiendo a esta ser resistente a la censura, además de quitar del control estatal la emisión de masa monetaria.</p>
+
+  <h3>En contra:</h3>
+  <h4>Es inelástico y será siempre volatil</h4>
+  <p>Bitcoin, al tener una oferta invariable y máxima de 21millones, va a ser siempre volatil ya que su cantidad no puede ajustarse a la demanda de dinero. Esto hace que su volatilidad lo vuelva poco útil cómo moneda al carecer de estabilidad.</p>
+  
+
+</div>
+
+
+{% endblock %}

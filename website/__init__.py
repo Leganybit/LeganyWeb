@@ -22,6 +22,12 @@ def create_app():
 	@app.route("/btc/proposicion_valor")
 	def proposicion_valor():
 		return render_template("/pages/bitcoin/proposición_valor.html")
+	@app.route("/btc/puede_ser_btc_moneda")
+	def puede_ser_btc_moneda():
+		return render_template("/pages/bitcoin/puede_ser_btc_moneda.html")
+	@app.route("/btc/custodiaYadopcion")
+	def custodiaYadopcion():
+		return render_template("/pages/bitcoin/custodiaYadopcion.html")
 #_____________Inicio monero_______________________
 	@app.route("/xmr")
 	def xmr():
@@ -33,7 +39,10 @@ def create_app():
 #_____________Inicio historia_______________________
 	@app.route("/historia")
 	def historia():
-		return render_template("/pages/historia/historia.html")
+		return render_template("/pages/historia.html")
+	@app.route("/historia/annona")
+	def annona():
+		return render_template("/pages/historia/annona.html")
 #_____________Inicio economia_______________________
 	@app.route("/economia")
 	def economia():
